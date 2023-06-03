@@ -1,1 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 
+#mainheader {
+	width: 100vw;
+	height: 13vh;
+	min-height: 93px;
+	background-color: rgb(185,37,136);
+	display: flex;
+	align-items: center;
+}
+
+#main-list {
+	list-style: none;
+	position: absolute;
+	margin: 20px;
+	display: none;
+}
+
+#main-dropdown {
+	height: 40px;
+	width: 40px;
+	background-color: rgba(0,0,0,0.1);
+	border: none;
+}
+
+@meta(max-width: 340px) {
+	#main-dropdown {
+		height: 300px;
+		width: 300px;
+	}
+}
+
+#create-new {
+	font-size: 2.5vh;
+	color: rgb(255,255,255);
+}
