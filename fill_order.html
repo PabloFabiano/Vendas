@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Criar Novo Pedido</title>
+		<link rel="stylesheet" href="fill_order.css">
+	</head>
+	<body>
+		<table id="order">
+			<tr>
+				<th class="cell-header" colspan="3">37 98836-4228 / 37 99969-9738</th>
+			</tr>
+			<tr>
+				<th class="cell-header" id="endress" colspan="10">Rua Dinamarca, 155, apto202, Paraíso, Divinópolis- MG / CEP:35500-512</th>
+			</tr>
+			<tr>
+				<th colspan="10">Seu Pedido</th>
+			</tr>
+			<tr>
+				<td id="order-id">Pedido: </td>
+				<td>
+					<label for="date">Data de criação do pedido:</label> 
+					<li id="date" type="date"></li>
+				</td>
+				<td>
+					<label>Status do pedido: </label>
+					<input id="status">
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="4" id="datas">
+					<textarea placeholder="Dados do cliente"></textarea>
+				</td>
+				<td>
+					<label for="channel">Canal de venda: </label>
+					<input id="channel" type="text">
+				</td>
+				<td>
+					<label for="divulgation">Meio de divulgação: </label>
+					<input id="divulgation" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="delliver">Meio de entrega: </label>
+					<input id="delliver" type="text">
+				</td>
+				<td>
+					<label for="previous-date">Data prevista: </label>
+					<input id="previous-date" type="date">
+				</td>
+			</tr>
+			<tr>
+				<td id="alert" colspan="2">AVISO: A data de entrega pode ter variações pois depende do prazo de produção do seu pedido e de entrega do correio.</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label id="cep">CEP: </label>
+					<input id="cep">
+				</td>
+			</tr>
+			<tr>
+				<th colspan="10">Seus Produtos<th>
+			</tr>
+			<tr>
+				<td>Cod.</td>
+				<td>Descrição</td>
+				<td>Preço</td>
+			</tr>
+			<tr>
+				<td>
+					<ul id="cod-list">
+						<input type="number">
+					</ul>
+				</td>
+				<td>
+					<ul id="name-list">
+						<input type="text">
+					</ul>
+				</td>
+				<td>
+					<ul id="price-list">
+						<input type="number">
+					</ul>
+				</td>
+			</tr>	
+		</table>
+		<table>
+			<tr>
+				<td>
+					<label for="promotion">Promoção</label>
+				</td>
+				<td>
+					<label for="payment" width="100">Forma de pagamento</label>
+				</td>
+				<td rowspan="2">
+					<li>Subtotal (=)</li>
+					<li>Desconto (-)</li>
+					<li>Frete (+)</li>
+				</td>
+				<td rowspan="2">
+					<li>R$0,00</li>
+					<li>R$0,00</li>
+					<li>R$0,00</li>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input id="promotion" type="checkbox">
+				</td>
+				<td>
+					<input id="payment" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td id="total" colspan="10">0,00</td>
+			</tr>
+		</table>
+		<input type="checkbox">
+		<table id="seller-table">
+			<tr>
+				<td>TAXAS</td>
+				<td>0,00</td>
+				<td>0,00</td>
+				<td>0,00</td>
+				<td rowspan="2">imp: 0,00</td>
+				<td rowspan="2">M. O.: 0,00</td>
+				<td rowspan="2">C. G.: 0,00</td>
+				<td rowspan="2">L.: 0,00</td>
+			</tr>
+			<tr>
+				<td colspan="4">Recebi: 0,00</td>
+			</tr>
+		</table>
+		<textarea placeholder="Anotações"></textarea>
+		<script src="fill_order.js"></script>
+	<body>
+</html>
