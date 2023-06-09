@@ -1,6 +1,12 @@
 * {
 	margin: 0;
 	padding: 0;
+	transition: 1s;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
 }
 
 #main-tools {
@@ -9,26 +15,37 @@
 }
 
 #main-header {
-	height: 10vh;
-	max-height: 200px;
-	min-height: 55px;
+	height: 7vh;
+	min-height: 100px;
 	width: 100%;
 	background-color: rgb(170,50,170);
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 #add-button {
-	height: 50px;
-	width: 50px;
-	font-size: 100%;
+	height: 70px;
+	width: 70px;
+	font-size: 150%;
 	text-decoration: none;
 	color: rgba(150,40,150);
 	background-color: rgba(255,255,255);
-	border: 2px solid rgba(150,40,150);
+	border: 3px solid rgba(150,40,150);
 	border-radius: 100%;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+#add-button:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 500px) {
+	#main-header {
+		height: 70px;
+	}
 }
