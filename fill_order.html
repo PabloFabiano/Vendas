@@ -26,7 +26,7 @@
 				</td>
 				<td>
 					<label>Status do pedido: </label>
-					<select>
+					<select id="status">
 						<option style="background-color: orange;">Aguardando pagamento</option>
 						<option style="background-color: green;">Pago</option>
 						<option style="background-color: yellow;">Em produção</option>
@@ -40,7 +40,7 @@
 			</tr>
 			<tr>
 				<td rowspan="4" id="datas">
-					<textarea placeholder="Dados do cliente"></textarea>
+					<textarea id="client-datas" placeholder="Dados do cliente"></textarea>
 				</td>
 				<td>
 					<label for="channel">Canal de venda: </label>
@@ -66,12 +66,14 @@
 			</tr>
 			<tr>
 				<td colspan="2">
-					<label id="cep">CEP: </label>
-					<input id="cep">
+					<label for="cep">CEP: </label>
+					<input id="cep" type="text">
 				</td>
 			</tr>
 			<tr>
-				<th colspan="10">Seus Produtos<th>
+				<th colspan="10">Seus Produtos
+					<button id="add-button" onclick="addProduct()">+</button>
+				<th>
 			</tr>
 			<tr>
 				<td>Cod.</td>
@@ -80,19 +82,13 @@
 			</tr>
 			<tr>
 				<td>
-					<ul id="cod-list">
-						<input type="number">
-					</ul>
+					<ul id="cod-list"></ul>
 				</td>
 				<td>
-					<ul id="name-list">
-						<input type="text">
-					</ul>
+					<ul id="name-list"></ul>
 				</td>
 				<td>
-					<ul id="price-list">
-						<input type="number">
-					</ul>
+					<ul id="price-list"></ul>
 				</td>
 			</tr>	
 		</table>
@@ -143,7 +139,7 @@
 				<td colspan="4">Recebi: 0,00</td>
 			</tr>
 		</table>
-		<textarea placeholder="Anotações"></textarea>
+		<textarea placeholder="Anotações" id="notes"></textarea>
 		<script src="fill_order.js"></script>
 	<body>
 </html>
